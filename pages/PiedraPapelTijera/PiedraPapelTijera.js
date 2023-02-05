@@ -17,7 +17,7 @@ export const PiedraPapelTijera = () => {
                 </ul>
                 <div class="resultados">
                     <div class="resultado-jugador-uno"></div>
-                    <div class="versus"><img src="https://res.cloudinary.com/depifliz3/image/upload/v1675615888/samples/ecommerce/jcj_n7zjzw.png"/></div>
+                    <p class="versus"><img src="https://res.cloudinary.com/depifliz3/image/upload/v1675615888/samples/ecommerce/jcj_n7zjzw.png"/></p>
                     <div class="resultado-jugador-dos"></div>
                 </div>
                 <ul class="opciones-jugador-dos">
