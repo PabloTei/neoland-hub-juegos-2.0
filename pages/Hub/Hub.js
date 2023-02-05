@@ -18,6 +18,7 @@ export const Hub = () => {
     route();
     routeRollDice();
     routePpt();
+    routeAtrapaTopo();
 }
 
 
@@ -48,5 +49,12 @@ const routePpt = () => {
     const routePpt = document.querySelector(".PIEDRAPAPELTIJERA-NAME");
     routePpt.addEventListener("click", () => {
         initContent("PiedraPapelTijera");
+    })
+}
+
+const routeAtrapaTopo = () => {
+    const routeAt = document.querySelector(".ATRAPATOPO-NAME");
+    routeAt.addEventListener("click", ()=> {
+        initContent("AtrapaTopo");
     })
 }
