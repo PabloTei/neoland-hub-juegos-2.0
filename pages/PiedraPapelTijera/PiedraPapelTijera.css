@@ -124,3 +124,31 @@
 .opciones-jugador-uno > li > button:hover {
     transform: rotate(30deg);
 }
+
+@media screen and (max-width: 500px) {
+    .piedra-papel-tijera {
+        width: 70vw;
+    }
+    .opciones-jugador-uno > li > button {
+        font-size: 2rem;
+    }
+    .opciones-jugador-dos > li > button {
+        font-size: 2rem;
+    }
+    .resultado-jugador-dos {
+        font-size: 2rem;
+    }
+    .resultado-jugador-uno {
+        font-size: 2rem;
+    }
+    .versus > img {
+        height: 20px;
+        width: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .ganador {
+        font-size: 15px;
+    }
+}
