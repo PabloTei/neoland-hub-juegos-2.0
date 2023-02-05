@@ -180,7 +180,6 @@ const comparacion = () => {
         ✌️
         `
     }
-    disabledButtons();
 }
 
 const resetMatch = () => {
@@ -197,15 +196,3 @@ const resetMatch = () => {
     })
 }
 
-const disabledButtons = () => {
-    if (value1 === 1 || value1 === 2 || value1 === 3) {
-        piedra1.disabled = true;
-        papel1.disabled =true;
-        tijera1.disabled = true;
-    }
-    if (value2 === 1 || value2 === 2 || value2 === 3) {
-        piedra2.disabled = true;
-        papel2.disabled =true;
-        tijera2.disabled = true;
-    }
-}
