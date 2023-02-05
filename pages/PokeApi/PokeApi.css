@@ -8,7 +8,7 @@
     padding: 1rem;
     gap: 8rem;
     margin-bottom: 4rem;
-    
+    min-height: 90vh;
     
 }
 
@@ -29,7 +29,7 @@
     -webkit-box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
     -moz-box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
     box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
-    height: 42vh;
+    max-height: 42vh;
 }
 
 .card-container > div > img {
