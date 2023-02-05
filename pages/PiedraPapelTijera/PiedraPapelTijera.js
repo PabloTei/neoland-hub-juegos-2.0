@@ -6,8 +6,8 @@ export const PiedraPapelTijera = () => {
     <div class ="ultimate">
         <div class="piedra-papel-tijera">
             <div class="jugadores">
-                <h2>Jugador 1</h2>
-                <h2>Jugador 2</h2>
+                <h2>PLAYER 1</h2>
+                <h2>PLAYER 2</h2>
             </div>
             <div class="marcador">
                 <ul class="opciones-jugador-uno">
@@ -17,6 +17,7 @@ export const PiedraPapelTijera = () => {
                 </ul>
                 <div class="resultados">
                     <div class="resultado-jugador-uno"></div>
+                    <div class="versus"><img src="https://res.cloudinary.com/depifliz3/image/upload/v1675615888/samples/ecommerce/jcj_n7zjzw.png"/></div>
                     <div class="resultado-jugador-dos"></div>
                 </div>
                 <ul class="opciones-jugador-dos">
@@ -26,7 +27,6 @@ export const PiedraPapelTijera = () => {
                 </ul>
             </div>
             <div class="resumen-partida">
-                <p></p>
                 <p class="ganador"></p>
             </div>
         </div>
@@ -91,7 +91,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 1 && valor2 === 2) {
         ganador.innerHTML = `
-        Gana jugador 2.
+        GANA JUGADOR 2
         `
         resultPlayerOne.innerHTML = `
         ✊
@@ -101,7 +101,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 1 && valor2 === 3) {
         ganador.innerHTML = `
-        Gana jugador 1.
+        GANA JUGADOR 1
         `
         resultPlayerOne.innerHTML = `
         ✊
@@ -111,7 +111,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 2 && valor2 === 1) {
         ganador.innerHTML = `
-        Gana jugador 1
+        GANA JUGADOR 1
         ` 
         resultPlayerOne.innerHTML = `
         🤚
@@ -121,7 +121,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 2 && valor2 === 3) {
         ganador.innerHTML = `
-        Gana jugador 2
+        GANA JUGADOR 2
         `
         resultPlayerOne.innerHTML = `
         🤚
@@ -131,7 +131,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 3 && valor2 === 1) {
         ganador.innerHTML = `
-        Gana jugador 2
+        GANA JUGADOR 2
         `
         resultPlayerOne.innerHTML = `
         ✌️
@@ -141,7 +141,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 3 && valor2 === 2) {
         ganador.innerHTML = `
-        Gana jugador 1
+        GANA JUGADOR 1
         `
         resultPlayerOne.innerHTML = `
         ✌️
