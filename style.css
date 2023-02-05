@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     color: inherit;
-    background-color: whitesmoke;
+    background-color: #6F6866;
     background-color: inherit;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -13,6 +13,7 @@
 body {
     min-height: 100vh;
     transition: all 1s ease-in-out;
+    background-color: #6F6866;
 }
 
 header {
