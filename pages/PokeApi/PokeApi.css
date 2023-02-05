@@ -155,7 +155,7 @@
     
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1410px) {
     .card-container {
     grid-template-columns: repeat(3, 15rem);
     grid-template-rows: repeat(50, 15rem);
