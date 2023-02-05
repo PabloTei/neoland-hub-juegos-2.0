@@ -28,11 +28,13 @@ export const PiedraPapelTijera = () => {
             </div>
             <div class="resumen-partida">
                 <p class="ganador"></p>
+                <button class="reset">RESET</button>
             </div>
         </div>
     </div>
     `
     addValueButtons();
+    resetMatch();
 }
 let valor1;
 let valor2;
@@ -46,10 +48,12 @@ const addValueButtons = () => {
     piedra1.addEventListener("click", () => {
         valor1 = 1;
         comparacion();
+
     })
     papel1.addEventListener("click", () => {
         valor1 = 2;
         comparacion();
+
     })
     tijera1.addEventListener("click", () => {
         valor1 = 3;
@@ -149,6 +153,7 @@ const comparacion = () => {
         resultPlayerTwo.innerHTML = `
         🤚
         `
+
     } else if (valor1 === 2 && valor2 === 2) {
         ganador.innerHTML = `
         Empate.
@@ -170,4 +175,18 @@ const comparacion = () => {
         ✌️
         `
     }
+}
+
+const resetMatch = () => {
+    const ganador1 = document.querySelector(".ganador");
+    const opcion1 = document.querySelector(".resultado-jugador-uno");
+    const opcion2 = document.querySelector(".resultado-jugador-dos");
+    const reset = document.querySelector(".reset");
+    reset.addEventListener("click", () => {
+        ganador1.innerHTML = "";
+        opcion1.innerHTML = "";
+        opcion2.innerHTML = "";
+        valor1 = 0;
+        valor2 = 0;
+    })
 }
