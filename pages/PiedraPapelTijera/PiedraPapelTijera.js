@@ -11,7 +11,7 @@ export const PiedraPapelTijera = () => {
             </div>
             <div class="marcador">
                 <ul class="opciones-jugador-uno">
-                    <li><button class="piedra1">✊</button></li>
+                    <li><button id="button" class="piedra1">✊</button></li>
                     <li><button class="papel1">🤚</button></li>
                     <li><button class="tijera1">✌️</button></li>
                 </ul>
@@ -27,10 +27,82 @@ export const PiedraPapelTijera = () => {
             </div>
             <div class="resumen-partida">
                 <p>/papel gana a piedra</p>
-                <p>/gana el jugadorX/</p>
+                <p class="ganador"></p>
             </div>
         </div>
     </div>
     `
+    addValueButtons();
+}
+let valor1;
+let valor2;
+
+const addValueButtons = () => {
+
+    const piedra1 = document.querySelector(".piedra1");
+    const papel1 = document.querySelector(".papel1");
+    const tijera1 = document.querySelector(".tijera1");
+
+    piedra1.addEventListener("click", () => {
+        valor1 = 1;
+        comparacion();
+    })
+    papel1.addEventListener("click", () => {
+        valor1 = 2;
+        comparacion();
+    })
+    tijera1.addEventListener("click", () => {
+        valor1 = 3;
+        comparacion();
+    })
+
+    const piedra2 = document.querySelector(".piedra2");
+    const papel2 = document.querySelector(".papel2");
+    const tijera2 = document.querySelector(".tijera2");
+    piedra2.addEventListener("click", () => {
+        valor2 = 1;
+        comparacion();
+    })
+    papel2.addEventListener("click", () => {
+        valor2 = 2;
+        comparacion();
+    })
+    tijera2.addEventListener("click", () => {
+        valor2 = 3;
+        comparacion();
+    })
 }
 
+
+const comparacion = () => {
+    const ganador = document.querySelector(".ganador");
+    if (valor1 === valor2) {
+        ganador.innerHTML = `
+        Empate.
+        `
+    } else if (valor1 === 1 && valor2 === 2) {
+        ganador.innerHTML = `
+        Gana jugador 2.
+        `
+    } else if (valor1 === 1 && valor2 === 3) {
+        ganador.innerHTML = `
+        Gana jugador 1.
+        `
+    } else if (valor1 === 2 && valor2 === 1) {
+        ganador.innerHTML = `
+        Gana jugador 1
+        ` 
+    } else if (valor1 === 2 && valor2 === 3) {
+        ganador.innerHTML = `
+        Gana jugador 2
+        `
+    } else if (valor1 === 3 && valor2 === 1) {
+        ganador.innerHTML = `
+        Gana jugador 2
+        `
+    } else if (valor1 === 3 && valor2 === 2) {
+        ganador.innerHTML = `
+        Gana jugador 1
+        `
+    }
+}

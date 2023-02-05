@@ -28,8 +28,8 @@ export const RollDice = () => {
 }
 
 const getRandomNumber = () => {
-    const jugador = Math.floor(Math.random() * (6 - 1) + 1);
-    const maquina = Math.floor(Math.random() * (6 - 1) + 1);
+    const jugador = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+    const maquina = Math.floor(Math.random() * (6 - 1 + 1) + 1);
     const dadoUser = document.querySelector(".prueba1");
     const dadoMaquina = document.querySelector(".prueba2");
     const resultado = document.querySelector(".resultado");
