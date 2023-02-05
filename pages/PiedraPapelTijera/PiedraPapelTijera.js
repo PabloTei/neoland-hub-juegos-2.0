@@ -26,7 +26,7 @@ export const PiedraPapelTijera = () => {
                 </ul>
             </div>
             <div class="resumen-partida">
-                <p>/papel gana a piedra</p>
+                <p></p>
                 <p class="ganador"></p>
             </div>
         </div>
@@ -76,33 +76,98 @@ const addValueButtons = () => {
 
 const comparacion = () => {
     const ganador = document.querySelector(".ganador");
-    if (valor1 === valor2) {
+    const resultPlayerOne = document.querySelector(".resultado-jugador-uno");
+    const resultPlayerTwo = document.querySelector(".resultado-jugador-dos");
+
+    if (valor1 === 1 && valor2 === 1) {
         ganador.innerHTML = `
         Empate.
+        `
+        resultPlayerOne.innerHTML = `
+        ✊
+        `
+        resultPlayerTwo.innerHTML = `
+        ✊
         `
     } else if (valor1 === 1 && valor2 === 2) {
         ganador.innerHTML = `
         Gana jugador 2.
         `
+        resultPlayerOne.innerHTML = `
+        ✊
+        `
+        resultPlayerTwo.innerHTML = `
+        🤚
+        `
     } else if (valor1 === 1 && valor2 === 3) {
         ganador.innerHTML = `
         Gana jugador 1.
+        `
+        resultPlayerOne.innerHTML = `
+        ✊
+        `
+        resultPlayerTwo.innerHTML = `
+        ✌️
         `
     } else if (valor1 === 2 && valor2 === 1) {
         ganador.innerHTML = `
         Gana jugador 1
         ` 
+        resultPlayerOne.innerHTML = `
+        🤚
+        `
+        resultPlayerTwo.innerHTML = `
+        ✊
+        `
     } else if (valor1 === 2 && valor2 === 3) {
         ganador.innerHTML = `
         Gana jugador 2
+        `
+        resultPlayerOne.innerHTML = `
+        🤚
+        `
+        resultPlayerTwo.innerHTML = `
+        ✌️
         `
     } else if (valor1 === 3 && valor2 === 1) {
         ganador.innerHTML = `
         Gana jugador 2
         `
+        resultPlayerOne.innerHTML = `
+        ✌️
+        `
+        resultPlayerTwo.innerHTML = `
+        ✊
+        `
     } else if (valor1 === 3 && valor2 === 2) {
         ganador.innerHTML = `
         Gana jugador 1
+        `
+        resultPlayerOne.innerHTML = `
+        ✌️
+        `
+        resultPlayerTwo.innerHTML = `
+        🤚
+        `
+    } else if (valor1 === 2 && valor2 === 2) {
+        ganador.innerHTML = `
+        Empate.
+        `
+        resultPlayerOne.innerHTML = `
+        🤚
+        `
+        resultPlayerTwo.innerHTML = `
+        🤚
+        `
+    } else if (valor1 === 3 && valor2 === 3) {
+        ganador.innerHTML = `
+        Empate.
+        `
+        resultPlayerOne.innerHTML = `
+        ✌️
+        `
+        resultPlayerTwo.innerHTML = `
+        ✌️
         `
     }
 }

@@ -70,6 +70,7 @@
     height: 5rem;
     justify-content: center;
     align-items: center;
+    font-size: 80px;
 }
 
 .resultado-jugador-dos {
@@ -79,6 +80,7 @@
     height: 5rem;
     justify-content: center;
     align-items: center;
+    font-size: 80px;
 }
 
 .opciones-jugador-uno > li > button {
