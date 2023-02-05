@@ -113,3 +113,11 @@
     filter: opacity(60%);
  
 }
+
+.opciones-jugador-dos > li > button:hover {
+    transform: rotate(45deg);
+}
+
+.opciones-jugador-uno > li > button:hover {
+    transform: rotate(30deg);
+}

@@ -103,17 +103,17 @@ const getRandomNumber = () => {
     
     if (jugador > maquina) {
         resultado.innerHTML = `
-        ${localStorage.getItem("user").toUpperCase()}, has ganado.
+        ${localStorage.getItem("user").toUpperCase()}, HAS GANADO.
         `
 
     } else if (jugador < maquina) {
         resultado.innerHTML = `
-        ${localStorage.getItem("user").toUpperCase()}, has perdido.
+        ${localStorage.getItem("user").toUpperCase()}, HAS PERDIDO.
         `
 
     } else {
         resultado.innerHTML = `
-        ${localStorage.getItem("user").toUpperCase()}, has empatado.
+        ${localStorage.getItem("user").toUpperCase()}, HAS EMPATADO.
         `
     }
 }
