@@ -162,17 +162,30 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
     .card-container {
     grid-template-columns: repeat(2, 15rem);
     grid-template-rows: repeat(75, 15rem);
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .card-container {
     grid-template-columns: repeat(1, 15rem);
     grid-template-rows: repeat(150, 15rem);
     }
 }
+
+@media screen and (max-width: 830px) {
+    .container-types {
+        grid-template-columns: repeat(6, 50px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container-types {
+        grid-template-columns: repeat(3, 50px);
+    }
+}
+
 
