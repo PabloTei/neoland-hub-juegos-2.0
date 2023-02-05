@@ -1,0 +1,36 @@
+footer {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    position:fixed;
+    bottom: 0;
+    object-position: bottom;
+    background-color: transparent;
+    width: 100vw;
+
+   
+}
+
+.anterior-page {
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    width: 5vw;
+    font-size: 16px;
+    min-width: 5px;
+    height: 30%;
+    box-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+    border-radius: 0.3rem;
+    border-color: black;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    background-color: #9c9c9c39;
+    font-weight: bold;
+}
+
+.anterior-page:hover {
+    border-bottom:4px solid rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}

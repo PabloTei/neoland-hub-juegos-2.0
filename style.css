@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    background-color: whitesmoke;
+    background-color: inherit;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    transition: all 1s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
