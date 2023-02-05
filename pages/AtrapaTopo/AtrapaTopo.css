@@ -1,20 +1,27 @@
 .cuadricula {
-    display: grid;
-    max-width: 80vw;
-    min-height: 90vh;
-    border: 1px solid blue;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
 }
 
 .cuadro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 20vh;
-    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    border-style: double;
+    border-color: #FFFCA8;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
 }
 
