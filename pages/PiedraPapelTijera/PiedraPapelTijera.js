@@ -48,17 +48,14 @@ const addValueButtons = () => {
     piedra1.addEventListener("click", () => {
         valor1 = 1;
         comparacion();
-
     })
     papel1.addEventListener("click", () => {
         valor1 = 2;
         comparacion();
-
     })
     tijera1.addEventListener("click", () => {
         valor1 = 3;
         comparacion();
-    
     })
 
     const piedra2 = document.querySelector(".piedra2");
@@ -67,17 +64,14 @@ const addValueButtons = () => {
     piedra2.addEventListener("click", () => {
         valor2 = 1;
         comparacion();
-       
     })
     papel2.addEventListener("click", () => {
         valor2 = 2;
         comparacion();
-        
     })
     tijera2.addEventListener("click", () => {
         valor2 = 3;
         comparacion();
-       
     })
     
 }
@@ -180,6 +174,7 @@ const comparacion = () => {
         ✌️
         `
     }
+    
 }
 
 const resetMatch = () => {
