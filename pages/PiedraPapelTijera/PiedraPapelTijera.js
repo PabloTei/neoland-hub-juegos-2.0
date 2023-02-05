@@ -36,8 +36,8 @@ export const PiedraPapelTijera = () => {
     addValueButtons();
     resetMatch();
 }
-let valor1;
-let valor2;
+let valor1 = 0;
+let valor2 = 0;
 
 const addValueButtons = () => {
 
@@ -174,7 +174,6 @@ const comparacion = () => {
         ✌️
         `
     }
-    
 }
 
 const resetMatch = () => {
@@ -191,3 +190,9 @@ const resetMatch = () => {
     })
 }
 
+/*const disabledButtons = () => {
+    const buttons1 = document.querySelectorAll("buttons");
+    if(!valor1 && !valor2) {
+        buttons1.disabled = true;
+    }
+}*/
