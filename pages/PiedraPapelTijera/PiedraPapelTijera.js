@@ -58,6 +58,7 @@ const addValueButtons = () => {
     tijera1.addEventListener("click", () => {
         valor1 = 3;
         comparacion();
+    
     })
 
     const piedra2 = document.querySelector(".piedra2");
@@ -66,15 +67,19 @@ const addValueButtons = () => {
     piedra2.addEventListener("click", () => {
         valor2 = 1;
         comparacion();
+       
     })
     papel2.addEventListener("click", () => {
         valor2 = 2;
         comparacion();
+        
     })
     tijera2.addEventListener("click", () => {
         valor2 = 3;
         comparacion();
+       
     })
+    
 }
 
 
@@ -175,6 +180,7 @@ const comparacion = () => {
         ✌️
         `
     }
+    disabledButtons();
 }
 
 const resetMatch = () => {
@@ -189,4 +195,17 @@ const resetMatch = () => {
         valor1 = 0;
         valor2 = 0;
     })
+}
+
+const disabledButtons = () => {
+    if (value1 === 1 || value1 === 2 || value1 === 3) {
+        piedra1.disabled = true;
+        papel1.disabled =true;
+        tijera1.disabled = true;
+    }
+    if (value2 === 1 || value2 === 2 || value2 === 3) {
+        piedra2.disabled = true;
+        papel2.disabled =true;
+        tijera2.disabled = true;
+    }
 }
