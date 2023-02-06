@@ -12,7 +12,7 @@ export const AtrapaMarvel = () => {
     `
     meterDivs();
     movMarvel();
-
+    
 }
 
 const meterDivs = () => {
@@ -37,15 +37,27 @@ const posicionRandom = () => {
 }
 
 const printMarvel = () => {
+    const remove = document.querySelectorAll(".cuadro");
+    for (const item of remove) {
+        item.innerHTML = "";
+    }
     posicionRandom().innerHTML = `
     <img class="img-marvel" src="https://res.cloudinary.com/depifliz3/image/upload/v1675642653/samples/animals/IMG_1307_jedwjt.png">
     `
+    //removeMarvel();
 }
 
+
 const movMarvel = () => {
-    const tiempoMarvel = setInterval(printMarvel, 2000)
+    const tiempoMarvel = setInterval(printMarvel, 2000);
     return tiempoMarvel;
 }
+
+
+
+
+
+
 
 
 
