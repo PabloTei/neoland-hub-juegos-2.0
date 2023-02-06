@@ -13,7 +13,10 @@ export const AcariciaMarvel = () => {
     <div class="cuadricula"></div>
     `
     meterDivs();
+    movMarvel();
     cuentaAtras();
+    
+    
 }
 
 const meterDivs = () => {
@@ -39,7 +42,6 @@ const posicionRandom = () => {
 
 
 let resultado = 0;
-let time = 10;
 
 const printMarvel = () => {
     const puntuacion = document.querySelector("#puntuacion");
@@ -61,22 +63,31 @@ const printMarvel = () => {
 }
 
 const movMarvel = () => {
-    const tiempoMarvel = setInterval(printMarvel, 700);
-    return tiempoMarvel;
+    const interval = setInterval(printMarvel, 700)
+    setTimeout(() => {
+        clearInterval(interval)
+    }, 9000);
 }
-movMarvel();
 
+let time = 10;
 const cuentaAtras = () => {
     document.getElementById('tiempo').innerHTML = time
     if (time === 0) {
-        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        /*if (window.confirm("Seguro que quieres salir?")) {
+            AcariciaMarvel();
+        }*/
         resultado = 0;
-        initContent("Hub")
+        time = 10;
+        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        initContent("AcariciaMarvel");
+        
+
     }  else {
         time -=1;
         setTimeout(cuentaAtras, 1000);
     }
 }
+
 
 
   
