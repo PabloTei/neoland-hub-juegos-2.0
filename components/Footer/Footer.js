@@ -1,6 +1,5 @@
 import "./Footer.css";
 import { initContent } from "../../main";
-import { PokeApi } from "../../pages/PokeApi/PokeApi";
 
 export const Footer = () => {
     const myFooter = document.querySelector("footer");
@@ -12,6 +11,7 @@ export const Footer = () => {
     `
     logout();
     anteriorPage();
+
 }
 
 const logout = () => {
@@ -28,4 +28,5 @@ const anteriorPage = () => {
         initContent("Hub");
     })
 }
+
 
