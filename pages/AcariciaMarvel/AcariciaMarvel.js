@@ -1,11 +1,11 @@
-import "./AtrapaMarvel.css";
+import "./AcariciaMarvel.css";
 import { initContent } from "../../main";
 import { Hub } from "../Hub/Hub";
 
-export const AtrapaMarvel = () => {
+export const AcariciaMarvel = () => {
     const container = document.querySelector("main");
     container.innerHTML = `
-    <h1 class"titulo-marvel">¡ATRAPA A MARVEL!</h1>
+    <h1 class"titulo-marvel">¡ACARICIA A MARVEL!</h1>
     <h2>CARICIAS:</h2>
     <h2 id="puntuacion">0</h2>
     <h2>Tiempo:</h2>
@@ -14,6 +14,7 @@ export const AtrapaMarvel = () => {
     `
     meterDivs();
     movMarvel();
+    cuentaAtras();
 }
 
 const meterDivs = () => {
@@ -57,15 +58,7 @@ const printMarvel = () => {
         ${resultado}
         `
     })
-    document.getElementById('tiempo').innerHTML = time
-    if (time === 0) {
-        //alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
-        clearInterval(movMarvel);
-        clearInterval(getRandomNumber);
-    }  else {
-        time -=1;
-        setTimeout(time, 1000);
-    }
+
 }
 
 const movMarvel = () => {
@@ -73,10 +66,17 @@ const movMarvel = () => {
     return tiempoMarvel;
 }
 
-
-
-
-
+const cuentaAtras = () => {
+    document.getElementById('tiempo').innerHTML = time
+    if (time === 0) {
+        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        resultado = 0;
+        //initContent("Hub")
+    }  else {
+        time -=1;
+        setTimeout(cuentaAtras, 1000);
+    }
+}
   
 
 
