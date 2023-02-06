@@ -6,8 +6,8 @@ export const PiedraPapelTijera = () => {
     <div class ="ultimate">
         <div class="piedra-papel-tijera">
             <div class="jugadores">
-                <h2>PLAYER 1</h2>
-                <h2>PLAYER 2</h2>
+                <h2 class="nombre-player1">PLAYER 1</h2>
+                <h2 class="nombre-player2">PLAYER 2</h2>
             </div>
             <div class="marcador">
                 <ul class="opciones-jugador-uno">

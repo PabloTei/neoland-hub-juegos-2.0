@@ -145,7 +145,10 @@
         height: 20px;
         width: 20px;
     }
-    h2 {
+    .nombre-player1{
+        font-size: 15px;
+    }
+    .nombre-player2{
         font-size: 15px;
     }
     .ganador {

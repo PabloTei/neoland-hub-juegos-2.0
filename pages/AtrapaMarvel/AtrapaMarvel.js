@@ -1,10 +1,10 @@
-import "./AtrapaTopo.css";
+import "./AtrapaMarvel.css";
 
-export const AtrapaTopo = () => {
+export const AtrapaMarvel = () => {
     const container = document.querySelector("main");
     container.innerHTML = `
-    <h1>¡ATRAPA EL TOPO!</h1>
-    <h2>Topos atrapados:</h2>
+    <h1 class"titulo-marvel">¡ATRAPA A MARVEL!</h1>
+    <h2>Marvel atrapado:</h2>
     <h2 id="puntaje">0</h2>
     <h2>Tiempo:</h2>
     <h2 id="tiempo">50</h2>

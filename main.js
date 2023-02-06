@@ -7,7 +7,7 @@ import { PokeApi } from './pages/PokeApi/PokeApi';
 import { Footer } from './components/Footer/Footer';
 import { RollDice } from './pages/RollDice/RollDice';
 import { PiedraPapelTijera } from './pages/PiedraPapelTijera/PiedraPapelTijera';
-import { AtrapaTopo } from './pages/AtrapaTopo/AtrapaTopo';
+import { AtrapaMarvel } from './pages/AtrapaMarvel/AtrapaMarvel';
 
 
 export const initContent = (route) => {
@@ -27,8 +27,8 @@ export const initContent = (route) => {
         case "PiedraPapelTijera":
             PiedraPapelTijera();
             break;
-        case "AtrapaTopo":
-            AtrapaTopo();
+        case "AtrapaMarvel":
+            AtrapaMarvel();
             break;
     }
 }

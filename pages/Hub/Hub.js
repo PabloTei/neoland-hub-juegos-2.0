@@ -18,7 +18,7 @@ export const Hub = () => {
     route();
     routeRollDice();
     routePpt();
-    routeAtrapaTopo();
+    routeAtrapaMarvel();
 }
 
 
@@ -52,9 +52,9 @@ const routePpt = () => {
     })
 }
 
-const routeAtrapaTopo = () => {
-    const routeAt = document.querySelector(".ATRAPATOPO-NAME");
+const routeAtrapaMarvel = () => {
+    const routeAt = document.querySelector(".ATRAPAMARVEL-NAME");
     routeAt.addEventListener("click", ()=> {
-        initContent("AtrapaTopo");
+        initContent("AtrapaMarvel");
     })
 }
