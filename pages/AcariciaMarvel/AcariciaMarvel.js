@@ -15,8 +15,7 @@ export const AcariciaMarvel = () => {
     meterDivs();
     movMarvel();
     cuentaAtras();
-    
-    
+     
 }
 
 const meterDivs = () => {
@@ -73,15 +72,10 @@ let time = 10;
 const cuentaAtras = () => {
     document.getElementById('tiempo').innerHTML = time
     if (time === 0) {
-        /*if (window.confirm("Seguro que quieres salir?")) {
-            AcariciaMarvel();
-        }*/
-        resultado = 0;
         time = 10;
-        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`);
+        resultado = 0;
         initContent("AcariciaMarvel");
-        
-
     }  else {
         time -=1;
         setTimeout(cuentaAtras, 1000);
