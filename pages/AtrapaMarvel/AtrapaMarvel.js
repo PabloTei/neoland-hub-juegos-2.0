@@ -11,7 +11,8 @@ export const AtrapaMarvel = () => {
     <div class="cuadricula"></div>
     `
     meterDivs();
-    printMarvel();
+    movMarvel();
+
 }
 
 const meterDivs = () => {
@@ -30,12 +31,25 @@ const getRandomNumber = () => {
     return number;
 }
 
-const printMarvel = () => {
-    const allCuadros = document.querySelectorAll(".cuadro");
+const posicionRandom = () => {
     const cuadroConcreto = document.getElementById(`${getRandomNumber()}`)
-    //console.log(cuadroConcreto);
-    cuadroConcreto.innerHTML = `
+    return cuadroConcreto;
+}
+
+const printMarvel = () => {
+    posicionRandom().innerHTML = `
     <img class="img-marvel" src="https://res.cloudinary.com/depifliz3/image/upload/v1675642653/samples/animals/IMG_1307_jedwjt.png">
     `
-
 }
+
+const movMarvel = () => {
+    const tiempoMarvel = setInterval(printMarvel, 2000)
+    return tiempoMarvel;
+}
+
+
+
+
+
+
+
