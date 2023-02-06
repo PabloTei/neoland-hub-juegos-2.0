@@ -13,7 +13,6 @@ export const AcariciaMarvel = () => {
     <div class="cuadricula"></div>
     `
     meterDivs();
-    movMarvel();
     cuentaAtras();
 }
 
@@ -65,18 +64,21 @@ const movMarvel = () => {
     const tiempoMarvel = setInterval(printMarvel, 700);
     return tiempoMarvel;
 }
+movMarvel();
 
 const cuentaAtras = () => {
     document.getElementById('tiempo').innerHTML = time
     if (time === 0) {
         alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
         resultado = 0;
-        //initContent("Hub")
+        initContent("Hub")
     }  else {
         time -=1;
         setTimeout(cuentaAtras, 1000);
     }
 }
+
+
   
 
 
