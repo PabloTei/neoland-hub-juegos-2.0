@@ -189,10 +189,3 @@ const resetMatch = () => {
         valor2 = 0;
     })
 }
-
-/*const disabledButtons = () => {
-    const buttons1 = document.querySelectorAll("buttons");
-    if(!valor1 && !valor2) {
-        buttons1.disabled = true;
-    }
-}*/

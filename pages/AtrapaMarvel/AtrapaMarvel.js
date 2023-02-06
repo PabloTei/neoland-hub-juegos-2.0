@@ -1,4 +1,6 @@
 import "./AtrapaMarvel.css";
+import { initContent } from "../../main";
+import { Hub } from "../Hub/Hub";
 
 export const AtrapaMarvel = () => {
     const container = document.querySelector("main");
@@ -7,13 +9,11 @@ export const AtrapaMarvel = () => {
     <h2>PUNTOS:</h2>
     <h2 id="puntuacion">0</h2>
     <h2>Tiempo:</h2>
-    <h2 id="TIEMPO">30</h2>
+    <h2 id="tiempo"></h2>
     <div class="cuadricula"></div>
     `
     meterDivs();
     movMarvel();
-    //touchMarvel();
-    
 }
 
 const meterDivs = () => {
@@ -39,6 +39,7 @@ const posicionRandom = () => {
 
 
 let resultado = 0;
+let time = 5;
 
 const printMarvel = () => {
     const puntuacion = document.querySelector("#puntuacion");
@@ -56,12 +57,27 @@ const printMarvel = () => {
         ${resultado}
         `
     })
+    document.getElementById('tiempo').innerHTML = time
+    if (time === 0) {
+        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        time = 5;
+    }  else {
+        time -=1;
+        setTimeout(time, 1000);
+    }
 }
 
 const movMarvel = () => {
-    const tiempoMarvel = setInterval(printMarvel, 1000);
+    const tiempoMarvel = setInterval(printMarvel, 700);
     return tiempoMarvel;
 }
+
+
+
+
+
+  
+
 
 
 
