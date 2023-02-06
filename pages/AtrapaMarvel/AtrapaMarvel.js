@@ -44,12 +44,11 @@ const printMarvel = () => {
     posicionRandom().innerHTML = `
     <img class="img-marvel" src="https://res.cloudinary.com/depifliz3/image/upload/v1675642653/samples/animals/IMG_1307_jedwjt.png">
     `
-    //removeMarvel();
 }
 
 
 const movMarvel = () => {
-    const tiempoMarvel = setInterval(printMarvel, 2000);
+    const tiempoMarvel = setInterval(printMarvel, 1000);
     return tiempoMarvel;
 }
 
