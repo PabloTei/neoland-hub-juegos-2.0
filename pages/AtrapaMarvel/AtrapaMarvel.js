@@ -6,10 +6,10 @@ export const AtrapaMarvel = () => {
     const container = document.querySelector("main");
     container.innerHTML = `
     <h1 class"titulo-marvel">¡ATRAPA A MARVEL!</h1>
-    <h2>PUNTOS:</h2>
+    <h2>CARICIAS:</h2>
     <h2 id="puntuacion">0</h2>
     <h2>Tiempo:</h2>
-    <h2 id="tiempo"></h2>
+    <h2 id="tiempo">0</h2>
     <div class="cuadricula"></div>
     `
     meterDivs();
@@ -39,7 +39,7 @@ const posicionRandom = () => {
 
 
 let resultado = 0;
-let time = 5;
+let time = 10;
 
 const printMarvel = () => {
     const puntuacion = document.querySelector("#puntuacion");
@@ -59,8 +59,9 @@ const printMarvel = () => {
     })
     document.getElementById('tiempo').innerHTML = time
     if (time === 0) {
-        alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
-        time = 5;
+        //alert(`El juego ha terminado, has acariciado ${resultado} veces a Marvel.`)
+        clearInterval(movMarvel);
+        clearInterval(getRandomNumber);
     }  else {
         time -=1;
         setTimeout(time, 1000);
