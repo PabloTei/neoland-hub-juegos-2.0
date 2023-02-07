@@ -17,18 +17,23 @@ export const initContent = (route) => {
             break;
         case "Hub":
             Hub();
+            Footer();
             break;
         case "PokeApi":
             PokeApi();
+            Footer();
             break;
         case "RollDice":
-            RollDice()
+            RollDice();
+            Footer();
             break;
         case "PiedraPapelTijera":
             PiedraPapelTijera();
+            Footer();
             break;
         case "AcariciaMarvel":
             AcariciaMarvel();
+            Footer();
             break;
     }
 }
@@ -37,7 +42,7 @@ export const initContent = (route) => {
 const header = document.querySelector("header");
 header.innerHTML = Header();
 
-Footer();
+//Footer();
 changeColor();
 initContent("Login");
 
