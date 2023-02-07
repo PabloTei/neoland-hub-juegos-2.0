@@ -27,7 +27,7 @@ export const PiedraPapelTijera = () => {
                 </ul>
             </div>
             <div class="resumen-partida">
-                <p class="ganador"></p>
+                <p class="ganador">RESULTADO</p>
                 <button class="reset">RESET</button>
             </div>
         </div>
@@ -94,7 +94,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 1 && valor2 === 2) {
         ganador.innerHTML = `
-        GANA JUGADOR 2
+        GANA PLAYER 2
         `
         resultPlayerOne.innerHTML = `
         ✊
@@ -104,7 +104,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 1 && valor2 === 3) {
         ganador.innerHTML = `
-        GANA JUGADOR 1
+        GANA PLAYER 1
         `
         resultPlayerOne.innerHTML = `
         ✊
@@ -114,7 +114,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 2 && valor2 === 1) {
         ganador.innerHTML = `
-        GANA JUGADOR 1
+        GANA PLAYER 1
         ` 
         resultPlayerOne.innerHTML = `
         🤚
@@ -124,7 +124,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 2 && valor2 === 3) {
         ganador.innerHTML = `
-        GANA JUGADOR 2
+        GANA PLAYER 2
         `
         resultPlayerOne.innerHTML = `
         🤚
@@ -134,7 +134,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 3 && valor2 === 1) {
         ganador.innerHTML = `
-        GANA JUGADOR 2
+        GANA PLAYER 2
         `
         resultPlayerOne.innerHTML = `
         ✌️
@@ -144,7 +144,7 @@ const comparacion = () => {
         `
     } else if (valor1 === 3 && valor2 === 2) {
         ganador.innerHTML = `
-        GANA JUGADOR 1
+        GANA PLAYER 1
         `
         resultPlayerOne.innerHTML = `
         ✌️
@@ -182,7 +182,7 @@ const resetMatch = () => {
     const opcion2 = document.querySelector(".resultado-jugador-dos");
     const reset = document.querySelector(".reset");
     reset.addEventListener("click", () => {
-        ganador1.innerHTML = "";
+        ganador1.innerHTML = "RESULTADO";
         opcion1.innerHTML = "";
         opcion2.innerHTML = "";
         valor1 = 0;
